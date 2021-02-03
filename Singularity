@@ -18,6 +18,6 @@ echo "This section happens once after bootstrap to build the image."
 mkdir -p /code
 yum install epel-release -y
 yum install figlet -y
-echo "echo \"RoooAAAARRRRR !!!!\"|figlet" >> /code/dino.sh
+echo "echo \"RoooAAAARRRRRR !!!!\"|figlet" >> /code/dino.sh
 chmod u+x /code/dino.sh  
 
