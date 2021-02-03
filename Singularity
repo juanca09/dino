@@ -1,5 +1,5 @@
 Bootstrap:docker  
-From:ubuntu:16.04
+From:centos:7
 
 %labels
 MAINTAINER juanca09
@@ -16,7 +16,8 @@ exec /bin/bash /code/dino.sh "$@"
 %post 
 echo "This section happens once after bootstrap to build the image."  
 mkdir -p /code
-apt -y install figlet
+yum install epel-release -y
+yum install figlet -y
 echo "echo \"RoooAAAARRRRR !!!!\"|figlet" >> /code/dino.sh
 chmod u+x /code/dino.sh  
 
