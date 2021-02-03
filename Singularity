@@ -15,7 +15,8 @@ exec /bin/bash /code/dino.sh "$@"
 
 %post 
 echo "This section happens once after bootstrap to build the image."  
-mkdir -p /code  
-echo "echo \"RoooAAAARRRRR !!!!\"" >> /code/dino.sh
+mkdir -p /code
+apt -y install figlet
+echo "echo \"RoooAAAARRRRR !!!!\"|figlet" >> /code/dino.sh
 chmod u+x /code/dino.sh  
 
