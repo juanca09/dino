@@ -10,7 +10,7 @@ RAWR_BASE=/code
 export RAWR_BASE
 
 %runscript
-echo "This gets run when you run the image!" 
+echo "This gets run when you run the dino image!" 
 exec /bin/bash /code/dino.sh "$@"  
 
 %post 
